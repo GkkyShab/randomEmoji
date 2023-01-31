@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Random PNG Image</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: white; text-align: center;">Random PNG Image</h1>
+    <img src="{{ url_for('static', filename=random_png) }}" alt="Random PNG">
+  </body>
+</html>
